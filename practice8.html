@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+         
+    <style>
+
+         li p{
+            background-color: black;
+            color: white;
+         }
+         div p{
+            border: 2px red   dotted;
+            background-color: blue;
+         }
+
+         div+p{
+            background-color: pink;
+            color: green;
+         }
+
+         div >p{
+            background-color: greenyellow;
+            color: black;
+            font-weight: bold;
+         }
+
+         
+
+    </style>
+
+
+</head>
+<body>
+   
+    <h1>More on Selectors</h1>
+
+    <div #container>
+      
+        <div id="box">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolor!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2> h2 inside div</h2>
+           <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <p>This is paragraph</p>
+
+        <div id="box">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+            <ul>
+                     <li>
+                        <p>this is p1</p>
+                        <p>this is p2</p>
+                     </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <p>This is a paragraph outside of div</p>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+
+   <style>
+
+      .container{
+         display: block;
+         width: 500px;
+         margin: auto;
+      }
+
+      input{
+         display: block;
+        
+      }
+      a{
+         display: block;
+      }
+      input[type=text]{
+         padding: 23px;
+         border: solid 3px red;
+      }
+      input[type=password]{
+         background-color: aqua;
+      }
+      input[placeholder]{
+          background-color: rgb(14, 245, 83);
+      }
+     
+      a[target]{
+           border: solid rgb(92, 11, 192) 5px;
+      }
+      a[target="_blank"]{
+         border: solid pink 3px;
+      }
+
+      li:nth-child(3){
+         color: yellow
+      }
+
+
+      input:nth-child(2){
+         background-color: blue;
+      }
+
+      
+      li:nth-child(2n+0){
+         color: red;
+      }
+      li:nth-child(2n+1){
+         color: yellow;
+      }
+      li:nth-child(3n+3){
+         background-color: red;
+      }
+
+      li:nth-child(odd){
+         background-color: blueviolet;
+      }
+      
+      
+      li:nth-child(even){
+         background-color: rgb(55, 213, 66);
+      }
+      
+
+   </style>
+</head>
+<body>
+   
+
+      <div class="container">
+
+          <form action="">
+
+            <input type="text" placeholder="Enter your name ">
+            <input type="email" placeholder="Enter your email ">
+            <input type="password" placeholder="Enter your pass">
+            <input type="number" placeholder="Enter number">
+
+            <a href="https://google.com" target="_blank">Go to Goole</a>
+            <a href="https://facebook.com"  ">Go to Facebook</a>
+            <a href="https://twitter.com" target="_blank">Go to twitter</a>
+            <a href="https://instragram.com" target="_self">Go to instragram</a>
+
+
+
+          </form>   
+
+         <ul >
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item four</li>
+            <li>Item five</li>
+            <li>Item six</li>
+         </ul>
+
+      </div>
+
+</body>
+</html>

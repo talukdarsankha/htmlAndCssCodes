@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .container{
+        display: flex;
+       border: solid red 2px;
+       height: 500px;
+      
+      }
+
+      .box{
+         text-align: center;
+         padding: 10px;
+         border: black solid 3px;
+         height: 200px;
+         width: 350px;
+         margin: auto auto;
+         background-color: rgb(241, 114, 24);
+         /* box-shadow: offset-x offset-y color; */
+         box-shadow: 10px 12px orange;
+
+          /* box-shadow: offset-x offset-y  blur-radius  color; */
+         box-shadow: 9px 15px 10px green;
+
+           /* box-shadow: offset-x offset-y  blur-radius  spred color; */
+         box-shadow: 7px 6px 9px 15px green;
+
+
+         box-shadow: -10px -13px rgb(134, 188, 26);
+         box-shadow: -15px -11px 15px orange;
+         box-shadow: -15px -10px 15px 10px  orangered;
+
+
+
+         box-shadow: 12px 15px 10px 8px rgba(44, 96, 149, 9);
+         box-shadow: 12px 15px 10px 8px rgba(44, 96, 149, 0.8);
+
+         box-shadow: inset 10px 15px ;
+
+         box-shadow: 14px 15px greenyellow ,20px 35px orange;
+         box-shadow: 14px 15px greenyellow ,20px 35px orange,30px 45px orangered;
+
+
+
+
+      }
+
+      .box h1{
+            text-shadow: 3px 4px red;
+            text-shadow: 6px 3px 2px rgb(51, 235, 10);
+      }
+
+
+
+   </style>
+</head>
+<body>
+   
+
+   <div class="container">
+
+      
+      <div class="box" id="cont1">
+         <h1>Card one</h1>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam voluptatibus doloremque incidunt, dolore cupiditate iusto quisquam iure sint odio modi, esse itaque illo accusantium recusandae nam maxime possimus quasi aliquam?</p>
+      </div>
+      <div class="box" id="cont2">
+         <h1>Card two</h1>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam voluptatibus doloremque incidunt, dolore cupiditate iusto quisquam iure sint odio modi, esse itaque illo accusantium recusandae nam maxime possimus quasi aliquam?</p>
+      </div>
+      <div class="box" id="cont3">
+         <h1>Card three</h1>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam voluptatibus doloremque incidunt, dolore cupiditate iusto quisquam iure sint odio modi, esse itaque illo accusantium recusandae nam maxime possimus quasi aliquam?</p>
+      </div>
+      
+   </div>
+
+
+</body>
+</html>

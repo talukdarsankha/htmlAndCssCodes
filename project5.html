@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Class</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+
+
+    <style>
+      body{
+        /* background-color: ; */
+        background-image: url('https://static.toiimg.com/photo/96125662.cms');
+        
+        height: 900px;
+        color: rgb(249, 239, 239);
+        font-family: 'Baloo Da 2', cursive;
+      }
+
+      .com{
+        /* margin: 10px 0px; */
+        padding: 0px 5px;
+        /* border: red solid 2px; */
+        display: inline-block;
+      }
+     #one{
+ 
+        position: absolute;
+        left: 30px;
+        
+         
+     }
+     #two{
+      display: block;
+      margin: auto;
+      width: 50%;
+     position: relative;
+     left: 100px;
+     top: 0px;
+     padding: 2px 3px;
+     
+
+     }
+     #three{
+     position: absolute;
+     right: 50px;
+     top: 20px;
+
+     }
+
+     
+     .more li a{
+      text-decoration: none;
+      color: white;
+      
+     }
+     ul li{
+      display: inline-block;
+      margin: 10px;
+      
+      font-size: 20px;
+     }
+
+     li a:hover {
+      text-decoration: underline;
+      color: aqua;
+     }
+     li a:active{
+      color: blue;
+     }
+      
+     #logotext{
+      color: white;
+      font-weight: 700;
+      font-size: large;
+      
+     }
+     #one img{
+       width: 60px;
+       display: block;
+      margin: auto;
+     }
+     .bt{
+      background-color: rgb(161, 243, 224);
+      width: 70px;
+      padding: 6px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin: 9px;
+      cursor: pointer;
+      font-family: 'Baloo Da 2', cursive;
+     }
+     .bt:hover{
+      background-color: rgb(154, 82, 222);
+
+     }
+     .bt:active{
+      color: rgb(241, 49, 241);
+     }
+
+     p{
+      position: relative;
+      top: 300px;
+      left: 250px;
+     }
+
+    .container{
+      border: rgb(151, 15, 5) solid 5px;
+      border-radius: 15px;
+     font-weight: 600;
+      width: 45%;
+      position: relative;
+      top: 100px;
+     left: 540px;
+    }
+    .container h1{
+      color: rgb(10, 2, 2);
+      font-size: 40px;
+      padding: 2px 25px;
+    }
+    .box{
+      width: 50%;
+     margin: 6px;
+
+    }
+    input{
+      font-size: 20px;
+      text-align: center;
+      position: relative;
+      left: 30px;
+      border-radius: 10px;
+    }
+    .sub{
+      font-size: 20px;
+      background-color: rgb(140, 63, 203);
+      border-radius: 12px;
+      color: rgb(50, 13, 20);
+      width: 200px;
+      margin-left: 55px;
+      
+    }
+    .sub:hover{
+      background-color: rgb(63, 22, 67);
+    }
+    .sub:active{
+      background-color: white;
+      color: black;
+    }
+    .cli{
+      color: black;
+      font-weight: 900;
+      font-size: 60px;
+      position: absolute;
+      top: 200px;
+      left: 60px;
+      width: 120px;
+    }
+
+    </style> 
+</head>
+
+
+<body>
+  
+  
+ <header class="header">
+
+
+  <div id="one" class="com">
+    <img src="data:image/png;base64,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" alt="logo">
+
+    <div id="logotext">
+      Ultra Strong
+    </div>
+   
+    
+  </div>
+
+  <div id="two" class="com">
+
+    <ul class="more" >
+
+      <li ><a href="#">Home</a></li>
+      <li><a href="#">Fitness</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Fess Structure</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+  </div>
+
+  <div id="three" class="com">
+    <button class="bt">Login</button>
+    <button class="bt">Log Out</button>
+  </div>
+
+ </header>
+
+ <div class="container">
+  <h1>Join Our Body Fitness World </h1>
+  <div class="box">
+  <input type="text" placeholder="Enter Your Name">
+  </div>
+  <div class="box">
+  <input type="text" placeholder="Enter your Age">
+  </div>
+<div class="box">
+  <input type="text" placeholder="Enter your Gender">
+</div>
+<div class="box">
+  <input type="text" placeholder="Enter your Contact No:">
+</div>
+
+<div class="box">
+  <button class="sub">Submit </button>
+</div>
+ </div>
+ <p class="cli"> Change Your Life Style</p>
+ 
+</body>
+</html>

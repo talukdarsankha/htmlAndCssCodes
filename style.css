@@ -1,0 +1,18 @@
+
+
+#online{
+ color: red;
+ font-weight: 900;
+}
+.money{
+    background-color: aqua;
+}
+
+.cost{
+    font-style: italic;
+}
+
+#ofline,.dollar{
+    font-style:inherit;
+    color: blue;
+}
